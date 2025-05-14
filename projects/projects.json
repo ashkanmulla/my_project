@@ -5,8 +5,8 @@
     "image": "notystackandroid",
     "category": "android",
     "links": {
-      "view": "https://www.linkedin.com/posts/Askan-Mulla_androiddev-androidstudio-java-activity-6955224473822199808-JT0j",
-      "code": "https://github.com/Askan-Mulla/notystack-android"
+      "view": "https://www.linkedin.com/posts/ashkanmulla_androiddev-androidstudio-java-activity-6955224473822199808-JT0j",
+      "code": "https://github.com/ashkanmulla/notystack-android"
     }
   },
   {
@@ -15,8 +15,8 @@
     "image": "sppuprepandroid",
     "category": "android",
     "links": {
-      "view": "https://www.linkedin.com/posts/Askan-Mulla_androiddev-androidstudio-java-activity-6955224473822199808-JT0j",
-      "code": "https://github.com/Askan-Mulla/sppu-prep-android"
+      "view": "https://www.linkedin.com/posts/ashkanmulla_androiddev-androidstudio-java-activity-6955224473822199808-JT0j",
+      "code": "https://github.com/ashkanmulla/sppu-prep-android"
     }
   },
   {
@@ -25,8 +25,8 @@
     "image": "newsboxandroid",
     "category": "android",
     "links": {
-      "view": "https://www.linkedin.com/posts/Askan-Mulla_androiddev-androidstudio-java-activity-6955224473822199808-JT0j",
-      "code": "https://github.com/Askan-Mulla/newsbox-android"
+      "view": "https://www.linkedin.com/posts/ashkanmulla_androiddev-androidstudio-java-activity-6955224473822199808-JT0j",
+      "code": "https://github.com/ashkanmulla/newsbox-android"
     }
   },
   {
@@ -35,18 +35,18 @@
     "image": "weatherlyandroid",
     "category": "android",
     "links": {
-      "view": "https://www.linkedin.com/posts/Askan-Mulla_androiddev-androidstudio-java-activity-6955224473822199808-JT0j",
-      "code": "https://github.com/Askan-Mulla/weatherly-android"
+      "view": "https://www.linkedin.com/posts/ashkanmulla_androiddev-androidstudio-java-activity-6955224473822199808-JT0j",
+      "code": "https://github.com/ashkanmulla/weatherly-android"
     }
   },
   {
-    "name": "RAG AI Chatbot",
+    "name": "RAG Based AI Chatbot",
     "desc": "AI Chatbot built using ReactJS and OpenAI API. Provides chat interface with AI.",
     "image": "instagrammern",
     "category": "mern",
     "links": {
       "view": "https://instagramernstack.herokuapp.com/",
-      "code": "https://github.com/Askan-Mulla/instagram-mern"
+      "code": "https://github.com/ashkanmulla/instagram-mern"
     }
   },
   {
@@ -56,47 +56,47 @@
     "category": "mern",
     "links": {
       "view": "https://flipkartwebs.herokuapp.com/",
-      "code": "https://github.com/Askan-Mulla/flipkart-mern"
+      "code": "https://github.com/ashkanmulla/flipkart-mern"
     }
   },
   {
-    "name": "ResumeGen",
+    "name": "Recommendation System",
     "desc": "ReactJS Basic Resume Generator which will generate customized resume in few minutes on your requirements.",
     "image": "resumegen",
     "category": "mern",
     "links": {
       "view": "https://resumegenx.netlify.app/",
-      "code": "https://github.com/Askan-Mulla/resumegen"
+      "code": "https://github.com/ashkanmulla/resumegen"
     }
   },
   {
-    "name": "React-Projects",
+    "name": "Lead Scoring Predictive Model",
     "desc": "Full-Stack project dashboard which is collection of projects built on the React library.",
     "image": "reactprojects",
     "category": "mern",
     "links": {
       "view": "https://reactjsprojects.herokuapp.com/",
-      "code": "https://github.com/Askan-Mulla/React-Projects"
+      "code": "https://github.com/ashkanmulla/React-Projects"
     }
   },
   {
-    "name": "Flipkart PHP",
+    "name": "Time Series Analysis - Forecasting Model",
     "desc": "Full-Stack Flipkart Clone Using LAMP Stack. With all major features and OTP authentication and Cashfree payment gateway.",
     "image": "flipkartphp",
     "category": "lamp",
     "links": {
-      "view": "https://github.com/Askan-Mulla/Flipkart-Clone-PHP",
-      "code": "https://github.com/Askan-Mulla/Flipkart-Clone-PHP"
+      "view": "https://github.com/ashkanmulla/Flipkart-Clone-PHP",
+      "code": "https://github.com/ashkanmulla/Flipkart-Clone-PHP"
     }
   },
   {
-    "name": "JavaScript Projects Website",
+    "name": "Gen AI for vision Aadhar and PAN Card KYC Using Computer Vision",
     "desc": "This website is specially build to showcase all major javaScript projects. All my javaScript based projects are in it.",
     "image": "jspro",
     "category": "basicweb",
     "links": {
-      "view": "https://Askan-Mulla.github.io/JavaScript-Projects",
-      "code": "https://github.com/Askan-Mulla/JavaScript-Projects"
+      "view": "https://ashkanmulla.github.io/JavaScript-Projects",
+      "code": "https://github.com/ashkanmulla/JavaScript-Projects"
     }
   },
   {
@@ -105,8 +105,8 @@
     "image": "webuiclones",
     "category": "mern",
     "links": {
-      "view": "https://github.com/Askan-Mulla/web-ui-clones",
-      "code": "https://github.com/Askan-Mulla/web-ui-clones"
+      "view": "https://github.com/ashkanmulla/web-ui-clones",
+      "code": "https://github.com/ashkanmulla/web-ui-clones"
     }
   },
   {
@@ -116,7 +116,7 @@
     "category": "mern",
     "links": {
       "view": "https://crypto-tracker-react-project.netlify.app/",
-      "code": "https://github.com/Askan-Mulla/React-Projects/tree/main/crypto-tracker"
+      "code": "https://github.com/ashkanmulla/React-Projects/tree/main/crypto-tracker"
     }
   },
   {
@@ -125,8 +125,8 @@
     "image": "hulu",
     "category": "mern",
     "links": {
-      "view": "https://hulu-clone-Askan-Mulla.vercel.app/",
-      "code": "https://github.com/Askan-Mulla/React-Projects/tree/main/hulu-clone"
+      "view": "https://hulu-clone-ashkanmulla.vercel.app/",
+      "code": "https://github.com/ashkanmulla/React-Projects/tree/main/hulu-clone"
     }
   },
   {
@@ -136,7 +136,7 @@
     "category": "basicweb",
     "links": {
       "view": "#",
-      "code": "https://github.com/Askan-Mulla/Portfolio-Website"
+      "code": "https://github.com/ashkanmulla/Portfolio-Website"
     }
   },
   {
@@ -146,7 +146,7 @@
     "category": "basicweb",
     "links": {
       "view": "https://composey.netlify.app/",
-      "code": "https://github.com/Askan-Mulla/LGMVIP-WebDev"
+      "code": "https://github.com/ashkanmulla/LGMVIP-WebDev"
     }
   },
   {
@@ -155,8 +155,8 @@
     "image": "webviewapp",
     "category": "android",
     "links": {
-      "view": "https://github.com/Askan-Mulla/Android-Webview#webapp--android-webview-app",
-      "code": "https://github.com/Askan-Mulla/Android-Webview"
+      "view": "https://github.com/ashkanmulla/Android-Webview#webapp--android-webview-app",
+      "code": "https://github.com/ashkanmulla/Android-Webview"
     }
   },
   {
@@ -166,7 +166,7 @@
     "category": "lamp",
     "links": {
       "view": "https://tsfbank.rf.gd",
-      "code": "https://github.com/Askan-Mulla/TSF-Bank"
+      "code": "https://github.com/ashkanmulla/TSF-Bank"
     }
   },
   {
@@ -215,8 +215,8 @@
     "image": "webchat",
     "category": "mern",
     "links": {
-      "view": "https://github.com/Askan-Mulla/WebChat#webchat",
-      "code": "https://github.com/Askan-Mulla/WebChat"
+      "view": "https://github.com/ashkanmulla/WebChat#webchat",
+      "code": "https://github.com/ashkanmulla/WebChat"
     }
   },
   {
@@ -225,8 +225,8 @@
     "image": "basicbank",
     "category": "android",
     "links": {
-      "view": "https://github.com/Askan-Mulla/Basic_Banking_App#basic-banking-app",
-      "code": "https://github.com/Askan-Mulla/Basic_Banking_App"
+      "view": "https://github.com/ashkanmulla/Basic_Banking_App#basic-banking-app",
+      "code": "https://github.com/ashkanmulla/Basic_Banking_App"
     }
   },
   {
@@ -235,8 +235,8 @@
     "image": "issuetrack",
     "category": "basicweb",
     "links": {
-      "view": "https://Askan-Mulla.github.io/JavaScript-Projects/projects/issuetracker",
-      "code": "https://github.com/Askan-Mulla/JavaScript-Projects/tree/main/projects/issuetracker"
+      "view": "https://ashkanmulla.github.io/JavaScript-Projects/projects/issuetracker",
+      "code": "https://github.com/ashkanmulla/JavaScript-Projects/tree/main/projects/issuetracker"
     }
   },
   {
@@ -245,8 +245,8 @@
     "image": "phppblform",
     "category": "lamp",
     "links": {
-      "view": "https://github.com/Askan-Mulla/PHP-Projects/tree/main/pblform#pbl-portal",
-      "code": "https://github.com/Askan-Mulla/PHP-Projects/tree/main/pblform"
+      "view": "https://github.com/ashkanmulla/PHP-Projects/tree/main/pblform#pbl-portal",
+      "code": "https://github.com/ashkanmulla/PHP-Projects/tree/main/pblform"
     }
   },
   {
@@ -255,8 +255,8 @@
     "image": "linklist",
     "category": "basicweb",
     "links": {
-      "view": "https://Askan-Mulla.github.io/LinkList",
-      "code": "https://github.com/Askan-Mulla/LinkList"
+      "view": "https://ashkanmulla.github.io/LinkList",
+      "code": "https://github.com/ashkanmulla/LinkList"
     }
   },
   {
@@ -265,8 +265,8 @@
     "image": "saas",
     "category": "basicweb",
     "links": {
-      "view": "https://Askan-Mulla.github.io/JavaScript-Projects/api-projects/saas-jobs",
-      "code": "https://github.com/Askan-Mulla/JavaScript-Projects/tree/main/api-projects/saas-jobs"
+      "view": "https://ashkanmulla.github.io/JavaScript-Projects/api-projects/saas-jobs",
+      "code": "https://github.com/ashkanmulla/JavaScript-Projects/tree/main/api-projects/saas-jobs"
     }
   },
   {

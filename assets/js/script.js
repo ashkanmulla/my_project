@@ -59,8 +59,8 @@ $(document).ready(function () {
 document.addEventListener('visibilitychange',
     function () {
         if (document.visibilityState === "visible") {
-            document.title = "Portfolio | Jigar Sable";
-            $("#favicon").attr("href", "assets/images/favicon.png");
+            document.title = "Portfolio | Askan Mulla";
+            $("#favicon").attr("href", "assets/images/favicon.jpeg");
         }
         else {
             document.title = "Come Back To Portfolio";
@@ -71,11 +71,11 @@ document.addEventListener('visibilitychange',
 
 // <!-- typed js effect starts -->
 var typed = new Typed(".typing-text", {
-    strings: ["frontend development", "backend development", "web designing", "android development", "web development"],
+    strings: ["Senior AI Engineer", "Lead Data Scientist", "Senior NLP Engineer", "MLOPS Engineer", "Gen AI Engineer"],
     loop: true,
-    typeSpeed: 50,
-    backSpeed: 25,
-    backDelay: 500,
+    typeSpeed: 60,
+    backSpeed: 35,
+    backDelay: 600,
 });
 // <!-- typed js effect ends -->
 
@@ -171,7 +171,7 @@ VanillaTilt.init(document.querySelectorAll(".tilt"), {
 // window.onload = fadeOut;
 // pre loader end
 
-// disable developer mode
+// diMulla developer mode
 document.onkeydown = function (e) {
     if (e.keyCode == 123) {
         return false;
