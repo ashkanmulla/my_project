@@ -1,6 +1,26 @@
 [
+   {
+    "name": "XChat Lanxess AI Chatbot",
+    "desc": "AI Chatbot built using ReactJS and OpenAI API. Provides chat interface with AI.",
+    "image": "xchat",
+    "category": "mern",
+    "links": {
+      "view": "https://instagramernstack.herokuapp.com/",
+      "code": "https://github.com/ashkanmulla/instagram-mern"
+    }
+  },  
   {
-    "name": "NotyStack Android",
+    "name": "RAG Based AI Chatbot-LTIMindtree",
+    "desc": "AI Chatbot built using ReactJS and OpenAI API. Provides chat interface with AI.",
+    "image": "instagrammern",
+    "category": "mern",
+    "links": {
+      "view": "https://instagramernstack.herokuapp.com/",
+      "code": "https://github.com/ashkanmulla/instagram-mern"
+    }
+  }, 
+  {
+    "name": "Scanned-Document-Classification",
     "desc": "Fully fledged android CRUD app based on different design patterns. Built using Java, XML, SQLite, Firebase, RoomDB, MVVM.",
     "image": "notystackandroid",
     "category": "android",
@@ -10,7 +30,7 @@
     }
   },
   {
-    "name": "SPPU Engg Prep",
+    "name": "Multiple document QA Chatbot",
     "desc": "All in one SPPU Engineering resources. Built using Java, XML and Firebase.",
     "image": "sppuprepandroid",
     "category": "android",
@@ -20,7 +40,7 @@
     }
   },
   {
-    "name": "NewsBox Android",
+    "name": "AI Chatbot For Financial Reports",
     "desc": "Native android app built using Java, XML. Retrofit & Glide dependencies. Provides different category news.",
     "image": "newsboxandroid",
     "category": "android",
@@ -30,7 +50,7 @@
     }
   },
   {
-    "name": "Weatherly Android",
+    "name": "GraphRAG Pro Chatbot with History",
     "desc": "Native android app built using Java, XML and Volley dependencies. Provides weather forecast.",
     "image": "weatherlyandroid",
     "category": "android",
@@ -40,9 +60,9 @@
     }
   },
   {
-    "name": "RAG Based AI Chatbot",
+    "name": "XChat Lanxess AI Chatbot",
     "desc": "AI Chatbot built using ReactJS and OpenAI API. Provides chat interface with AI.",
-    "image": "instagrammern",
+    "image": "xchat",
     "category": "mern",
     "links": {
       "view": "https://instagramernstack.herokuapp.com/",
@@ -50,7 +70,7 @@
     }
   },
   {
-    "name": "Flipkart MERN",
+    "name": "Insurance RAG Chatbot",
     "desc": "Full-Stack Flipkart with Admin Dashboard and Paytm Payment Gateway. MERN Stack WebApp, ready to use for business.",
     "image": "flipkartmern",
     "category": "mern",
@@ -100,7 +120,7 @@
     }
   },
   {
-    "name": "Web UI Clones",
+    "name": "RAG Based Financial Chatbot",
     "desc": "Flipkart, YouTube, Instagram, Sololearn web UI clones using tailwindCSS.",
     "image": "webuiclones",
     "category": "mern",
@@ -110,7 +130,7 @@
     }
   },
   {
-    "name": "Crypto Tracker",
+    "name": "Demand Forecasting",
     "desc": "Crypto Tracker built using ReactJS and Chakra UI. Supports dark mode. API used coingecko.",
     "image": "cryptotracker",
     "category": "mern",
@@ -120,9 +140,9 @@
     }
   },
   {
-    "name": "Hulu Website",
+    "name": "Credit Card Fraud Detection",
     "desc": "Hulu website built using NextJS and tailwindCSS. API used TMDB, deployed on vercel.",
-    "image": "hulu",
+    "image": "credit",
     "category": "mern",
     "links": {
       "view": "https://hulu-clone-ashkanmulla.vercel.app/",
@@ -130,7 +150,7 @@
     }
   },
   {
-    "name": "Portfolio Website",
+    "name": "Multi-Lingual Voice RAG Chatbot",
     "desc": "Personal Portfolio Website. Don't Need Much Info About It, Just Scroll Down. You're Here Only!",
     "image": "portfolio1",
     "category": "basicweb",
@@ -140,7 +160,7 @@
     }
   },
   {
-    "name": "Composey Website",
+    "name": "Realtime RAG Chatbot For Finance",
     "desc": "Simple landing page website built using HTML, CSS, JavaScript and some JavaScript Libraries.",
     "image": "composey",
     "category": "basicweb",
@@ -150,7 +170,7 @@
     }
   },
   {
-    "name": "Webview App",
+    "name": "Database ChatBot-ICICI Lombard",
     "desc": "It's an android app which uses web view component for displaying content. This app provides many different features.",
     "image": "webviewapp",
     "category": "android",
@@ -160,7 +180,7 @@
     }
   },
   {
-    "name": "PHP Banking Website",
+    "name": "Bank Statement Analysze-5 Paisa",
     "desc": "Basic Banking System based on PHP and MySQL database. Made with HTML, CSS, JavaScript and backend with PHP.",
     "image": "tsfbank",
     "category": "lamp",
@@ -170,7 +190,7 @@
     }
   },
   {
-    "name": "Bootstrap Portfolio",
+    "name": "NLP to SQL-Fine tuning a T5 Model",
     "desc": "Portfolio built using HTML, CSS, Bootstrap, SASS and JavaScript. Customized Bootstrap using SCSS.",
     "image": "bootstrapportfolio",
     "category": "basicweb",
@@ -180,7 +200,7 @@
     }
   },
   {
-    "name": "Bootstrap Template",
+    "name": "Customer Segmentation RFM Analysis",
     "desc": "Basic website template built using HTML and Bootstrap.",
     "image": "bootstraptemplate",
     "category": "basicweb",
