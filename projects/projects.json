@@ -1,7 +1,7 @@
 [
    {
     "name": "XChat Lanxess AI Chatbot",
-    "desc": "AI Chatbot built using ReactJS and OpenAI API. Provides chat interface with AI.",
+    "desc": "• Secure enterprise bot that answers MSDS / SOP questions for chemists using retrieval-augmented generation (RAG) and LangChain.",
     "image": "xchat",
     "category": "mern",
     "links": {
@@ -60,9 +60,9 @@
     }
   },
   {
-    "name": "XChat Lanxess AI Chatbot",
+    "name": "Multi-Agent Systems with LangGraph",
     "desc": "AI Chatbot built using ReactJS and OpenAI API. Provides chat interface with AI.",
-    "image": "xchat",
+    "image": "agent",
     "category": "mern",
     "links": {
       "view": "https://instagramernstack.herokuapp.com/",
@@ -80,9 +80,9 @@
     }
   },
   {
-    "name": "Recommendation System",
+    "name": "Hybrid Recommender System ",
     "desc": "ReactJS Basic Resume Generator which will generate customized resume in few minutes on your requirements.",
-    "image": "resumegen",
+    "image": "reco",
     "category": "mern",
     "links": {
       "view": "https://resumegenx.netlify.app/",
@@ -100,7 +100,7 @@
     }
   },
   {
-    "name": "Time Series Analysis - Forecasting Model",
+    "name": "Azure OpenAI + OCR: Extraction Information from Images and PDF's",
     "desc": "Full-Stack Flipkart Clone Using LAMP Stack. With all major features and OTP authentication and Cashfree payment gateway.",
     "image": "flipkartphp",
     "category": "lamp",
@@ -130,7 +130,7 @@
     }
   },
   {
-    "name": "Demand Forecasting",
+    "name": "OCR-Invoice Data Extraction",
     "desc": "Crypto Tracker built using ReactJS and Chakra UI. Supports dark mode. API used coingecko.",
     "image": "cryptotracker",
     "category": "mern",
@@ -210,7 +210,7 @@
     }
   },
   {
-    "name": "Foodicious",
+    "name": "Gold Price Prediction-Time Series",
     "desc": "Basic food website landing page built using HTML, CSS and JavaScript.",
     "image": "foodicious",
     "category": "basicweb",
@@ -220,7 +220,7 @@
     }
   },
   {
-    "name": "Food Website",
+    "name": "Anomaly Detection Using ML",
     "desc": "Basic food website landing page built using HTML, CSS, SASS, Bootstrap and jQuery.",
     "image": "foodwebsite",
     "category": "basicweb",
@@ -230,9 +230,9 @@
     }
   },
   {
-    "name": "WebChat Website",
+    "name": "Bank Customer Churn PRediction",
     "desc": "It's a web based chat app made using popular javaScript library Socket IO. Allows multiple users to connect.",
-    "image": "webchat",
+    "image": "churn",
     "category": "mern",
     "links": {
       "view": "https://github.com/ashkanmulla/WebChat#webchat",
@@ -270,13 +270,13 @@
     }
   },
   {
-    "name": "Link List",
-    "desc": "All major profile links in a single website. It's just like clone of link tree. Personalized and Responsive.",
-    "image": "linklist",
-    "category": "basicweb",
+    "name": "Time Series Analysis - Forecasting Model",
+    "desc": "Full-Stack Flipkart Clone Using LAMP Stack. With all major features and OTP authentication and Cashfree payment gateway.",
+    "image": "flipkartphp",
+    "category": "lamp",
     "links": {
-      "view": "https://ashkanmulla.github.io/LinkList",
-      "code": "https://github.com/ashkanmulla/LinkList"
+      "view": "https://github.com/ashkanmulla/Flipkart-Clone-PHP",
+      "code": "https://github.com/ashkanmulla/Flipkart-Clone-PHP"
     }
   },
   {
