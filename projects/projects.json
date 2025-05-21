@@ -60,16 +60,6 @@
     }
   },
   {
-    "name": "Multi-Agent Systems with LangGraph",
-    "desc": "AI Chatbot built using ReactJS and OpenAI API. Provides chat interface with AI.",
-    "image": "agent",
-    "category": "mern",
-    "links": {
-      "view": "https://instagramernstack.herokuapp.com/",
-      "code": "https://github.com/ashkanmulla/instagram-mern"
-    }
-  },
-  {
     "name": "Privacy Focused Insurance RAG Chatbot",
     "desc": "Full-Stack Flipkart with Admin Dashboard and Paytm Payment Gateway. MERN Stack WebApp, ready to use for business.",
     "image": "flipkartmern",
