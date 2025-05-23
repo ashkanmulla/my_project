@@ -353,6 +353,11 @@ header .navbar ul li a:hover {
 
 
 
+
+
+
+
+
 /* about section starts */
 /* Google Fonts */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
@@ -915,6 +920,24 @@ header .navbar ul li a:hover {
 /* skills media queries ends*/
 /* skills section ends */
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* education section starts */
 /* Import Google Fonts */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&family=Nunito:wght@300;400;600;700;800&display=swap');
@@ -1309,6 +1332,20 @@ html {
 /* education media queries ends*/
 /* education section ends */
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* work section starts */
 .work {
   /* background: #010124; */
@@ -1428,6 +1465,17 @@ html {
   transform: translateX(5px);
 }
 /* work section ends */
+
+
+
+
+
+
+
+
+
+
+
 
 /* experience section starts */
 .experience .timeline {
@@ -1631,6 +1679,25 @@ irection: row-reverse;
 .button-area button:hover i {
   left: 8px;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* contact section starts */
 .contact {
   background: #e5ecfb;
@@ -1785,6 +1852,27 @@ form .button-area {
     margin-right: 2rem;
   }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* contact section media queries ends */
 /* contact section ends */
 
