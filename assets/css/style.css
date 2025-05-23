@@ -344,6 +344,15 @@ header .navbar ul li a:hover {
 /* hero media queries ends*/
 /* hero section end */
 
+
+
+
+
+
+
+
+
+
 /* about section starts */
 /* Google Fonts */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
@@ -822,6 +831,13 @@ header .navbar ul li a:hover {
     gap: 0;
   }
 }
+
+
+
+
+
+
+
 /* about media queries ends*/
 /* about section ends */
 
@@ -903,402 +919,384 @@ header .navbar ul li a:hover {
 /* Import Google Fonts */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&family=Nunito:wght@300;400;600;700;800&display=swap');
 
-.education {
-  background: linear-gradient(135deg, #667eea 0%, #764ba2 50%, #f093fb 100%);
-  min-height: 100vh;
-  padding: 80px 20px;
-  position: relative;
-  overflow: hidden;
+/* === GLOBAL STYLES (ये स्टाइल सभी सेक्शंस पर लागू हो सकते हैं) === */
+:root {
+  --primary-color: #012970; /* गहरा नीला - मुख्य रंग */
+  --secondary-color: #4a69ff; /* थोड़ा और वाइब्रेंट नीला - एक्सेंट रंग */
+  --accent-glow: rgba(74, 105, 255, 0.4); /* एक्सेंट रंग का ग्लो */
+  --light-bg: #e5ecfb;     /* हल्का नीला बैकग्राउंड (आपके शिक्षा सेक्शन का) */
+  --text-dark: #212529;        /* गहरा टेक्स्ट रंग, थोड़ा सॉफ्ट */
+  --text-light: #555e68;       /* हल्का टेक्स्ट रंग, थोड़ा अधिक परिभाषित */
+  --card-bg: #ffffff;       /* कार्ड का बैकग्राउंड */
+  /* উন্নততর কার্ড শ্যাডো */
+  --card-shadow-light: 0 4px 8px rgba(0, 0, 0, 0.05);
+  --card-shadow-strong: 0 8px 25px rgba(0, 0, 0, 0.1);
+  --card-hover-shadow: 0 12px 35px rgba(74, 105, 255, 0.15), 0 5px 15px rgba(0,0,0,0.1);
+  --border-radius-md: 12px; /* थोड़ा और राउंडेड */
+  --border-radius-lg: 16px; /* बड़े एलिमेंट्स के लिए */
+  --transition-smooth: all 0.4s cubic-bezier(0.25, 0.8, 0.25, 1);
+  --transition-fast: all 0.25s ease-out;
 }
 
-/* Animated background elements */
-.education::before {
+body {
+  font-family: "Nunito", sans-serif;
+  color: var(--text-dark);
+  line-height: 1.7;
+  background-color: #f7f9fc; /* पूरे पेज के लिए थोड़ा बदला हुआ लाइट बैकग्राउंड */
+}
+
+/* === UNIVERSAL HEADING STYLES === */
+.section-heading {
+  font-size: clamp(2rem, 5vw, 2.8rem); /* रिस्पॉन्सिव फॉन्ट साइज */
+  color: var(--primary-color);
+  text-align: center;
+  margin-bottom: 3.5rem; /* शीर्षक और कंटेंट के बीच अधिक जगह */
+  font-weight: 700;
+  position: relative;
+  padding-bottom: 1.5rem; /* अंडरलाइन के लिए जगह */
+  text-transform: uppercase;
+  letter-spacing: 1.5px; /* थोड़ा अधिक लेटर स्पेसिंग */
+  text-shadow: 1px 1px 2px rgba(0,0,0,0.05);
+}
+
+.section-heading span { /* शीर्षक में एक खास शब्द को हाईलाइट करने के लिए (वैकल्पिक) */
+  color: var(--secondary-color);
+}
+
+.section-heading::before {
   content: '';
   position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
+  left: 50%;
+  bottom: 0.5rem; /* थोड़ा ऊपर */
+  transform: translateX(-50%);
+  width: 120px;
+  height: 6px;
+  background-image: linear-gradient(to right, var(--secondary-color), var(--primary-color)); /* ग्रेडिएंट अंडरलाइन */
+  border-radius: 5px;
+  box-shadow: 0 3px 8px var(--accent-glow);
+}
+
+.section-heading::after {
+  content: '';
+  position: absolute;
+  left: 50%;
   bottom: 0;
-  background: 
-    radial-gradient(circle at 20% 30%, rgba(255,255,255,0.1) 2px, transparent 2px),
-    radial-gradient(circle at 80% 70%, rgba(255,255,255,0.1) 1px, transparent 1px),
-    radial-gradient(circle at 40% 80%, rgba(255,255,255,0.05) 3px, transparent 3px);
-  background-size: 50px 50px, 30px 30px, 70px 70px;
-  animation: float 20s ease-in-out infinite;
-  opacity: 0.6;
+  transform: translateX(-50%);
+  width: 60px; /* छोटी लाइन */
+  height: 3px;
+  background-color: var(--primary-color);
+  opacity: 0.7;
+  border-radius: 3px;
 }
 
-@keyframes float {
-  0%, 100% { transform: translateY(0px) rotate(0deg); }
-  25% { transform: translateY(-10px) rotate(1deg); }
-  50% { transform: translateY(-20px) rotate(-1deg); }
-  75% { transform: translateY(-10px) rotate(0.5deg); }
+
+/* === EDUCATION SECTION STARTS === */
+.education {
+  background: var(--light-bg); /* यह बैकग्राउंड फिक्स्ड रहेगा */
+  min-height: 80vh;
+  padding: 80px 20px; /* सेक्शन में ऊपर-नीचे ज्यादा पैडिंग */
+  overflow: hidden; /* एनिमेशन और ओवरफ्लो कण्ट्रोल के लिए */
 }
 
-/* Heading Styles */
-.education .heading {
-  text-align: center;
-  font-size: 4rem;
-  color: #ffffff;
-  margin-bottom: 1rem;
-  font-family: 'Poppins', sans-serif;
-  font-weight: 800;
-  text-shadow: 0 4px 20px rgba(0,0,0,0.3);
-  position: relative;
-  z-index: 10;
-  animation: fadeInDown 1s ease-out;
-}
-
-.education .heading i {
-  background: linear-gradient(45deg, #ffd700, #ff6b6b, #4ecdc4);
-  background-size: 200% 200%;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
-  margin-right: 1rem;
-  animation: gradientShift 3s ease-in-out infinite, bounce 2s infinite;
-}
-
-.education .heading span {
-  background: linear-gradient(45deg, #00f5ff, #0072ff, #00c6ff);
-  background-size: 200% 200%;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
-  animation: gradientShift 3s ease-in-out infinite reverse;
-}
-
-@keyframes gradientShift {
-  0%, 100% { background-position: 0% 50%; }
-  50% { background-position: 100% 50%; }
-}
-
-@keyframes bounce {
-  0%, 20%, 50%, 80%, 100% { transform: translateY(0); }
-  40% { transform: translateY(-10px); }
-  60% { transform: translateY(-5px); }
-}
-
-@keyframes fadeInDown {
-  from {
-    opacity: 0;
-    transform: translateY(-50px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-
-/* Quote Styles */
 .education .qoute {
-  font-size: 1.8rem;
+  font-size: clamp(1.3rem, 3vw, 1.6rem); /* रिस्पॉन्सिव */
   text-align: center;
-  font-family: "Nunito", sans-serif;
-  font-weight: 600;
-  margin: 2rem auto 4rem;
-  color: #ffffff;
+  font-family: "Georgia", "Times New Roman", serif; /* अधिक औपचारिक कोट फॉन्ट */
+  font-weight: 500;
+  margin-bottom: 4rem;
+  color: var(--text-light);
+  max-width: 750px;
+  margin-left: auto;
+  margin-right: auto;
   font-style: italic;
+  line-height: 1.6;
   position: relative;
-  z-index: 10;
-  max-width: 800px;
-  text-shadow: 0 2px 10px rgba(0,0,0,0.3);
-  animation: fadeInUp 1s ease-out 0.3s both;
+  padding: 0 20px;
 }
 
-.education .qoute::before,
+.education .qoute::before, .education .qoute::after {
+  content: "“"; /* डबल कोटेशन मार्क */
+  font-family: "Georgia", serif;
+  font-size: 3.5rem;
+  color: var(--secondary-color);
+  opacity: 0.5;
+  position: absolute;
+  line-height: 1;
+}
+.education .qoute::before {
+  top: -0.5rem;
+  left: -0.5rem;
+}
 .education .qoute::after {
-  content: '"';
-  font-size: 3rem;
-  color: #ffd700;
-  font-weight: bold;
-  text-shadow: 0 0 20px rgba(255, 215, 0, 0.8);
+  content: "”";
+  bottom: -1.5rem;
+  right: -0.5rem;
 }
 
-@keyframes fadeInUp {
-  from {
-    opacity: 0;
-    transform: translateY(30px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
 
-/* Container Styles */
 .education .box-container {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  align-items: center;
+  align-items: stretch;
   flex-direction: column;
-  gap: 3rem;
-  position: relative;
-  z-index: 10;
+  gap: 3rem; /* बॉक्स के बीच और आकर्षक अंतर */
 }
 
-/* Enhanced Box Styles */
 .education .box-container .box {
   display: flex;
   flex-direction: row;
-  width: 85%;
-  max-width: 1000px;
-  border-radius: 25px;
-  background: rgba(255, 255, 255, 0.1);
-  backdrop-filter: blur(20px);
-  border: 2px solid rgba(255, 255, 255, 0.2);
-  text-align: center;
+  width: 90%;
+  max-width: 950px;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: var(--border-radius-lg); /* बड़ा रेडियस */
+  box-shadow: var(--card-shadow-strong);
+  text-align: left;
   position: relative;
-  overflow: hidden;
-  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
-  animation: slideInUp 0.8s ease-out;
-  box-shadow: 
-    0 8px 32px rgba(0, 0, 0, 0.2),
-    inset 0 1px 0 rgba(255, 255, 255, 0.1);
+  overflow: hidden; /* आवश्यक */
+  background: var(--card-bg);
+  border: 1px solid transparent;
+  transition: var(--transition-smooth);
+  transform-style: preserve-3d; /* 3D इफेक्ट्स के लिए */
+  perspective: 1000px; /* 3D इफेक्ट्स के लिए पर्सपेक्टिव */
 }
 
-.education .box-container .box:nth-child(1) { animation-delay: 0.1s; }
-.education .box-container .box:nth-child(2) { animation-delay: 0.3s; }
-.education .box-container .box:nth-child(3) { animation-delay: 0.5s; }
-
-@keyframes slideInUp {
-  from {
-    opacity: 0;
-    transform: translateY(80px) scale(0.9);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0) scale(1);
-  }
+.education .box-container .box:hover {
+  transform: translateY(-12px) scale(1.015) rotateX(3deg) rotateY(-2deg);
+  box-shadow: var(--card-hover-shadow);
+  border-color: var(--secondary-color);
 }
 
-/* Shimmer Effect */
+/* बॉक्स के अंदर एक डेकोरेटिव एलिमेंट */
 .education .box-container .box::before {
   content: '';
   position: absolute;
-  top: 0;
-  left: -100%;
-  width: 100%;
-  height: 100%;
-  background: linear-gradient(
-    90deg,
-    transparent,
-    rgba(255, 255, 255, 0.2),
-    transparent
-  );
-  transition: 0.8s;
-  z-index: 1;
+  top: -50px;
+  right: -50px;
+  width: 150px;
+  height: 150px;
+  background-image: linear-gradient(135deg, var(--secondary-color), var(--primary-color));
+  border-radius: 50%;
+  opacity: 0.05; /* बहुत हल्का */
+  transform: rotate(45deg);
+  transition: var(--transition-smooth);
+  pointer-events: none; /* इस पर क्लिक न हो सके */
 }
 
 .education .box-container .box:hover::before {
-  left: 100%;
+  opacity: 0.1;
+  transform: scale(1.2) rotate(60deg);
 }
 
-/* Enhanced Hover Effects */
-.education .box-container .box:hover {
-  transform: translateY(-15px) scale(1.03);
-  box-shadow: 
-    0 25px 80px rgba(0, 0, 0, 0.3),
-    0 0 40px rgba(102, 126, 234, 0.3),
-    inset 0 1px 0 rgba(255, 255, 255, 0.2);
-  background: rgba(255, 255, 255, 0.15);
-  border-color: rgba(255, 255, 255, 0.3);
-}
-
-/* Image Styles */
 .education .box-container .box .image {
-  flex: 1 1 300px;
-  width: 100%;
-  position: relative;
+  flex: 0 0 280px; /* इमेज के लिए थोड़ी अधिक निश्चित चौड़ाई */
   overflow: hidden;
-  border-radius: 25px 0 0 25px;
+  position: relative; /* ओवरले के लिए */
+  clip-path: polygon(0 0, 100% 0, 85% 100%, 0% 100%); /* इमेज को थोड़ा स्टाइलिश कट दें */
+  transition: clip-path 0.4s ease;
 }
 
-.education .box-container .box .image::after {
+.education .box-container .box:hover .image {
+   clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%); /* होवर पर सीधा */
+}
+
+.education .box-container .box .image::after { /* इमेज पर हल्का ग्रेडिएंट ओवरले */
   content: '';
   position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background: linear-gradient(
-    45deg,
-    rgba(102, 126, 234, 0.3),
-    rgba(118, 75, 162, 0.3),
-    rgba(240, 147, 251, 0.3)
-  );
-  opacity: 0;
-  transition: 0.4s;
-  z-index: 2;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: linear-gradient(to bottom, rgba(1, 41, 112, 0.05), rgba(74, 105, 255, 0.15));
+  opacity: 0.8;
+  transition: var(--transition-fast);
 }
 
 .education .box-container .box:hover .image::after {
-  opacity: 1;
+  opacity: 0;
 }
 
 .education .box-container .box img {
   object-fit: cover;
-  position: relative;
   width: 100%;
   height: 100%;
-  transition: 0.4s;
-  filter: brightness(0.9) contrast(1.1);
+  transition: transform 0.5s cubic-bezier(0.165, 0.84, 0.44, 1), filter 0.4s ease-out;
+  filter: grayscale(30%) contrast(0.95); /* थोड़ा डीसैचुरेटेड और कंट्रास्ट */
 }
 
 .education .box-container .box:hover img {
-  transform: scale(1.1);
-  filter: brightness(1.1) contrast(1.2);
+  transform: scale(1.12); /* होवर पर इमेज थोड़ा अधिक ज़ूम */
+  filter: grayscale(0%) contrast(1);
 }
 
-/* Content Styles */
 .education .box-container .box .content {
-  position: relative;
   display: flex;
   flex-direction: column;
-  padding: 2.5rem;
-  flex: 1 1 60%;
   justify-content: center;
-  background: rgba(255, 255, 255, 0.05);
-  border-radius: 0 25px 25px 0;
-  z-index: 3;
+  padding: 2.5rem 3rem; /* कंटेंट के चारों ओर अधिक पैडिंग */
+  flex: 1 1 auto;
+  position: relative; /* z-index के लिए */
+  z-index: 1;
 }
 
 .education .box-container .box .content h3 {
-  font-size: 2.2rem;
-  background: linear-gradient(45deg, #00f5ff, #0072ff, #667eea);
-  background-size: 200% 200%;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
-  padding: 0.5rem 0;
+  font-size: clamp(1.8rem, 4vw, 2.2rem);
+  color: var(--primary-color);
+  padding-bottom: 0.5rem;
   font-weight: 700;
   text-align: left;
-  font-family: 'Poppins', sans-serif;
-  line-height: 1.2;
-  margin: 0 0 1rem 1rem;
-  animation: gradientShift 4s ease-in-out infinite;
+  margin-bottom: 1rem;
+  transition: var(--transition-fast);
+  position: relative;
+}
+/* शीर्षक के नीचे एनिमेटेड अंडरलाइन */
+.education .box-container .box .content h3::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 3px;
+  width: 0;
+  background-color: var(--secondary-color);
+  transition: width 0.4s ease-out;
+}
+.education .box-container .box:hover .content h3::after {
+  width: 50px; /* या 30% जैसा कुछ */
+}
+
+.education .box-container .box:hover .content h3 {
+  color: var(--secondary-color);
+  letter-spacing: 0.5px; /* होवर पर हल्का लेटर स्पेसिंग */
 }
 
 .education .box-container .box .content p {
-  font-size: 1.4rem;
-  margin-left: 1rem;
+  font-size: clamp(0.95rem, 2.5vw, 1.1rem);
   text-align: left;
-  color: #ffffff;
-  margin-bottom: 1.5rem;
-  font-family: 'Nunito', sans-serif;
-  font-weight: 500;
-  opacity: 0.95;
-  line-height: 1.6;
-  text-shadow: 0 1px 3px rgba(0,0,0,0.3);
+  color: var(--text-light);
+  line-height: 1.8;
+  margin-bottom: 0; /* आखिरी पैराग्राफ के नीचे मार्जिन नहीं */
 }
 
-.education .box-container .box .content h4 {
-  font-size: 1.8rem;
-  background: linear-gradient(45deg, #ffd700, #ff6b6b, #4ecdc4);
-  background-size: 200% 200%;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
-  text-align: left;
-  margin: 1rem;
-  font-family: "Poppins", sans-serif;
-  font-weight: 700;
-  display: flex;
-  align-items: center;
-  gap: 0.8rem;
-  animation: gradientShift 3s ease-in-out infinite;
+.education .box-container .box .content p:not(:last-child) {
+    margin-bottom: 0.8rem; /* पैराग्राफ्स के बीच मार्जिन */
 }
 
-.education .box-container .box .content h4::before {
-  content: '🎓';
-  font-size: 1.5rem;
-  animation: pulse 2s infinite;
+/* === ANIMATIONS (स्क्रॉल पर दिखने के लिए JS की आवश्यकता होगी) === */
+/* यह एक उदाहरण है, आप इसे Intersection Observer API के साथ JS में लागू कर सकते हैं */
+.animate-on-scroll {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.6s ease-out, transform 0.6s ease-out;
 }
 
-@keyframes pulse {
-  0%, 100% { transform: scale(1); }
-  50% { transform: scale(1.1); }
+.animate-on-scroll.is-visible {
+  opacity: 1;
+  transform: translateY(0);
 }
 
-/* Media Queries */
-@media screen and (max-width: 768px) {
-  .education {
-    padding: 60px 15px;
+/* स्टैगर्ड एनिमेशन के लिए */
+.education .box-container .box {
+  /*  (JS के साथ)
+  opacity: 0;
+  transform: scale(0.95) translateY(20px);
+  transition: opacity 0.5s ease-out, transform 0.5s ease-out;
+  transition-delay: calc(0.15s * var(--animation-order, 0));
+  */
+}
+
+
+/* === EDUCATION MEDIA QUERIES STARTS === */
+@media screen and (max-width: 992px) {
+  .education .box-container .box {
+    width: 95%;
+    /* टैबलेट पर क्लिप-पाथ बदल सकते हैं या हटा सकते हैं अगर अजीब लगे */
+    .image {
+       flex: 0 0 220px;
+       clip-path: polygon(0 0, 100% 0, 90% 100%, 0% 100%);
+    }
   }
+  .education .box-container .box .content {
+    padding: 2rem 2.5rem;
+  }
+}
 
-  .education .heading {
-    font-size: 2.8rem;
+@media screen and (max-width: 768px) {
+  .section-heading {
+    font-size: clamp(1.8rem, 6vw, 2.2rem);
+    margin-bottom: 2.5rem;
+    padding-bottom: 1rem;
+  }
+  .section-heading::before {
+    width: 90px;
+    height: 5px;
+  }
+   .section-heading::after {
+    width: 45px;
+    height: 2.5px;
   }
 
   .education .qoute {
-    font-size: 1.4rem;
     margin-bottom: 3rem;
   }
+   .education .qoute::before, .education .qoute::after {
+     font-size: 2.8rem;
+   }
+  .education .qoute::before { top: -0.3rem; left: -0.3rem; }
+  .education .qoute::after { bottom: -1rem; right: -0.3rem; }
 
+
+  .education .box-container {
+    gap: 2rem;
+  }
   .education .box-container .box {
     flex-direction: column;
-    width: 95%;
-    border-radius: 20px;
+    width: calc(100% - 30px); /* थोड़ा मार्जिन रखने के लिए */
+    margin-left: auto;
+    margin-right: auto;
+    transform: none !important; /* मोबाइल पर जटिल 3D होवर हटा दें */
+    perspective: none;
+  }
+  .education .box-container .box:hover {
+    transform: translateY(-8px) scale(1.01) !important; /* सरल होवर इफेक्ट */
+    box-shadow: var(--card-hover-shadow) !important;
+  }
+  .education .box-container .box::before {
+    display: none; /* मोबाइल पर डेकोरेटिव एलिमेंट हटा दें */
   }
 
   .education .box-container .box .image {
     width: 100%;
-    height: 250px;
-    border-radius: 20px 20px 0 0;
+    height: 220px;
+    flex-basis: 220px;
+    clip-path: none !important; /* मोबाइल पर क्लिप-पाथ हटा दें */
+    border-top-left-radius: var(--border-radius-lg);
+    border-top-right-radius: var(--border-radius-lg);
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+  }
+   .education .box-container .box .image::after {
+     background: linear-gradient(to bottom, rgba(1, 41, 112, 0), rgba(74, 105, 255, 0.1)); /* हल्का ओवरले */
+   }
+
+  .education .box-container .box img {
+    border-top-left-radius: var(--border-radius-lg);
+    border-top-right-radius: var(--border-radius-lg);
+    filter: grayscale(10%) contrast(1); /* मोबाइल पर थोड़ा कम फ़िल्टर */
+  }
+  .education .box-container .box:hover img {
+    transform: scale(1.08);
   }
 
   .education .box-container .box .content {
-    padding: 2rem;
-    border-radius: 0 0 20px 20px;
+    padding: 1.8rem;
   }
-
-  .education .box-container .box .content h3 {
-    font-size: 1.8rem;
-    text-align: center;
-    margin-left: 0;
+  .education .box-container .box .content h3::after {
+    /* मोबाइल पर होवर अंडरलाइन को हमेशा दिखा सकते हैं या सरल रख सकते हैं */
+    width: 40px;
   }
-
-  .education .box-container .box .content p {
-    font-size: 1.2rem;
-    text-align: center;
-    margin-left: 0;
-  }
-
-  .education .box-container .box .content h4 {
-    font-size: 1.4rem;
-    text-align: center;
-    justify-content: center;
-    margin-left: 0;
-  }
+   .education .box-container .box:hover .content h3::after {
+      width: 40px; /* होवर पर बदलाव नहीं */
+   }
 }
 
-@media screen and (max-width: 480px) {
-  .education .heading {
-    font-size: 2.2rem;
-  }
-
-  .education .qoute {
-    font-size: 1.2rem;
-    padding: 0 1rem;
-  }
-
-  .education .box-container .box .content {
-    padding: 1.5rem;
-  }
-
-  .education .box-container .box .content h3 {
-    font-size: 1.6rem;
-  }
-
-  .education .box-container .box .content p {
-    font-size: 1.1rem;
-  }
-
-  .education .box-container .box .content h4 {
-    font-size: 1.3rem;
-  }
-}
 
 /* Additional enhancement for smooth animations */
 * {
